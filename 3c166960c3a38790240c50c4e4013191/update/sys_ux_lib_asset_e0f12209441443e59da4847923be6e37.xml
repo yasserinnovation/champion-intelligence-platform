@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_lib_asset">
+    <sys_ux_lib_asset action="INSERT_OR_UPDATE">
+        <bundled_asset>false</bundled_asset>
+        <category>component</category>
+        <checksum>252c23592599af1b14f022bbe490f87e</checksum>
+        <config_option/>
+        <content>/*__ESM_BODY_START__*/window.process={versions:null};let MP="https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.18",POSE=[[11,12],[11,13],[13,15],[12,14],[14,16],[15,17],[15,19],[16,18],[16,20],[11,23],[12,24],[23,24],[23,25],[25,27],[27,29],[27,31],[24,26],[26,28],[28,30],[28,32],[0,11],[0,12]],diag=document.getElementById("diag"),msg=document.getElementById("msg"),startBtn=document.getElementById("startBtn"),badge=document.getElementById("badge"),hud=document.getElementById("hud"),fpsEl=document.getElementById("fps"),kpEl=document.getElementById("kp"),v=document.getElementById("v"),c=document.getElementById("c"),landmarker=null,stream=null,lastTs=0,frameCount=0,lastFpsAt=0;function setDiag(t){diag&amp;&amp;(diag.textContent=t)}async function initEngine(){try{await WebAssembly.instantiate(new Uint8Array([0,97,115,109,1,0,0,0]))}catch(e){return setDiag("WASM_FAIL "+(e&amp;&amp;e.message?e.message:e)),msg&amp;&amp;(msg.innerHTML='&lt;span class="err"&gt;WebAssembly is blocked on this page.&lt;/span&gt;'),!1}let lastErr="",delegates=["GPU","CPU"];for(let i=0;i&lt;delegates.length;i++)try{let vision=await import(MP+"/vision_bundle.mjs"),fileset=await vision.FilesetResolver.forVisionTasks(MP+"/wasm"),resp=await fetch("https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_lite/float16/1/pose_landmarker_lite.task");if(!resp.ok)throw Error("model HTTP "+resp.status);let buf=new Uint8Array(await resp.arrayBuffer());return landmarker=await vision.PoseLandmarker.createFromOptions(fileset,{baseOptions:{modelAssetBuffer:buf,delegate:delegates[i]},runningMode:"VIDEO",numPoses:1}),setDiag("POSE_INIT_OK_"+delegates[i]),!0}catch(e){lastErr=e&amp;&amp;e.message?e.message:""+e}return setDiag("POSE_INIT_FAIL "+lastErr),msg&amp;&amp;(msg.innerHTML='&lt;span class="err"&gt;Pose engine could not start:&lt;br&gt;'+lastErr+"&lt;/span&gt;"),!1}async function startCamera(){startBtn.style.display="none",msg&amp;&amp;(msg.textContent="Starting camera…");try{v.srcObject=stream=await navigator.mediaDevices.getUserMedia({video:{facingMode:"user",width:640,height:480},audio:!1}),await v.play(),document.getElementById("overlay").style.display="none",badge.style.display="flex",hud.style.display="flex",document.getElementById("badgeText").textContent="LIVE \xb7 TRACKING",lastFpsAt=performance.now(),function drawLoop(){if(!landmarker||!stream)return;let vw=v.videoWidth||0,vh=v.videoHeight||0;vw&amp;&amp;c.width!==vw&amp;&amp;(c.width=vw,c.height=vh);let ctx=c.getContext("2d");if(ctx&amp;&amp;vw&amp;&amp;v.readyState&gt;=2){ctx.clearRect(0,0,vw,vh);try{let ts=performance.now();ts&lt;=lastTs&amp;&amp;(ts=lastTs+1),lastTs=ts;let res=landmarker.detectForVideo(v,ts),pts=res&amp;&amp;res.landmarks&amp;&amp;res.landmarks[0];if(pts){let vis=0;ctx.lineWidth=3,ctx.strokeStyle="#35e0ff";for(let e=0;e&lt;POSE.length;e++){let a=pts[POSE[e][0]],b=pts[POSE[e][1]];a&amp;&amp;b&amp;&amp;(ctx.beginPath(),ctx.moveTo(a.x*vw,a.y*vh),ctx.lineTo(b.x*vw,b.y*vh),ctx.stroke())}ctx.fillStyle="#34e3a4";for(let k=0;k&lt;pts.length;k++){let p=pts[k];(null==p.visibility||p.visibility&gt;.5)&amp;&amp;vis++,ctx.beginPath(),ctx.arc(p.x*vw,p.y*vh,4,0,2*Math.PI),ctx.fill()}kpEl&amp;&amp;(kpEl.textContent=""+vis)}}catch(e){}}frameCount++;let now=performance.now();now-lastFpsAt&gt;500&amp;&amp;(fpsEl&amp;&amp;(fpsEl.textContent=""+Math.round(1e3*frameCount/(now-lastFpsAt))),frameCount=0,lastFpsAt=now),requestAnimationFrame(drawLoop)}()}catch(e){msg&amp;&amp;(msg.innerHTML='&lt;span class="err"&gt;Camera error: '+(e&amp;&amp;e.message?e.message:e)+"&lt;/span&gt;"),document.getElementById("overlay").style.display="flex"}}!async function(){await initEngine()&amp;&amp;(msg&amp;&amp;(msg.textContent="Pose engine ready."),startBtn.style.display="inline-block",startBtn.addEventListener("click",startCamera))}();
+//# sourceMappingURL=poselive.js.map.jsdbx
+</content>
+        <content_meta/>
+        <dependencies/>
+        <device_type/>
+        <es_module>true</es_module>
+        <is_attachment>false</is_attachment>
+        <mime_type>application/javascript</mime_type>
+        <name>x_snc_champion_i_0/poselive</name>
+        <sys_class_name>sys_ux_lib_asset</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-08 15:45:55</sys_created_on>
+        <sys_id>e0f12209441443e59da4847923be6e37</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_champion_i_0/poselive</sys_name>
+        <sys_package display_value="Champion Intelligence Platform" source="x_snc_champion_i_0">3c166960c3a38790240c50c4e4013191</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Champion Intelligence Platform">3c166960c3a38790240c50c4e4013191</sys_scope>
+        <sys_update_name>sys_ux_lib_asset_e0f12209441443e59da4847923be6e37</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-08 15:45:55</sys_updated_on>
+    </sys_ux_lib_asset>
+    <sn_glider_source_artifact_m2m action="INSERT_OR_UPDATE">
+        <application_file display_value="x_snc_champion_i_0/poselive">e0f12209441443e59da4847923be6e37</application_file>
+        <source_artifact display_value="x_snc_champion_i_0_poselive.do - BYOUI Files">85e41605928746f39d9729291bcaaa33</source_artifact>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-08 15:45:55</sys_created_on>
+        <sys_id>8d38318e8a13421ba3664823facd7800</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-08 15:45:55</sys_updated_on>
+    </sn_glider_source_artifact_m2m>
+    <sn_glider_source_artifact action="INSERT_OR_UPDATE">
+        <name>x_snc_champion_i_0_poselive.do - BYOUI Files</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-08 15:45:53</sys_created_on>
+        <sys_id>85e41605928746f39d9729291bcaaa33</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-08 15:45:53</sys_updated_on>
+    </sn_glider_source_artifact>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color/>
+        <chunk_size_bytes>933336</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>application/zip</content_type>
+        <encryption_context/>
+        <file_name>x_snc_champion_i_0_poselive.do - BYOUI Files.zip</file_name>
+        <hash>d9404ca3b1afcf9243d3cd8c0649d27d2a7a55496e0edf99c978b96b210ed6f8</hash>
+        <image_height/>
+        <image_width/>
+        <size_bytes>7039</size_bytes>
+        <size_compressed>3410</size_compressed>
+        <state/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-08 15:45:53</sys_created_on>
+        <sys_id>8b7c704f5bba52207b80f04584e90193</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-08 15:45:53</sys_updated_on>
+        <table_name>sn_glider_source_artifact</table_name>
+        <table_sys_id>85e41605928746f39d9729291bcaaa33</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>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</data>
+        <length/>
+        <position>0</position>
+        <sys_attachment display_value="x_snc_champion_i_0_poselive.do - BYOUI Files.zip" sys_id="8b7c704f5bba52207b80f04584e90193">8b7c704f5bba52207b80f04584e90193</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-08 15:45:53</sys_created_on>
+        <sys_id>93d0206c27b5e9e8c77fa28d2984e44d</sys_id>
+    </sys_attachment_doc>
+</record_update>
