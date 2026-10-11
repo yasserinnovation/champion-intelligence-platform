@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="athlete_name" label="Athlete Name" language="en" table="x_snc_champion_i_0_journey">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>athlete_name</element>
+            <help/>
+            <hint/>
+            <label>Athlete Name</label>
+            <language>en</language>
+            <name>x_snc_champion_i_0_journey</name>
+            <plural>Athlete Names</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-10-11 10:43:36</sys_created_on>
+            <sys_id>9cd2e022a1d340948bd08f7e42df9836</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Athlete Name</sys_name>
+            <sys_package display_value="Champion Intelligence Platform" source="x_snc_champion_i_0">3c166960c3a38790240c50c4e4013191</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Champion Intelligence Platform">3c166960c3a38790240c50c4e4013191</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_champion_i_0_journey_athlete_name_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-10-11 10:43:36</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
