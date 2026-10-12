@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="3e5bc573aed84d4e823d3e91899ffaaf" label="Talent Nomination" name="x_snc_champion_i_0_nomination" type="collection">
+        <element display="true" label="Athlete Name" mandatory="true" max_length="150" name="athlete_name" type="string"/>
+        <element label="Decision Notes" max_length="2000" name="decision_notes" type="multi_two_lines"/>
+        <element label="City" max_length="100" name="city" type="string"/>
+        <element label="Decision By" max_length="150" name="decision_by" type="string"/>
+        <element label="Sport" max_length="60" name="sport" type="string"/>
+        <element label="History" max_length="4000" name="history" type="multi_two_lines"/>
+        <element label="Coach Notified" max_length="0" name="notified_coach" type="boolean"/>
+        <element label="Submitted By (Coach)" max_length="150" name="submitted_by" type="string"/>
+        <element label="Club" max_length="150" name="club" type="string"/>
+        <element default="pending" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Rejected" sequence="3" value="rejected"/>
+                <element inactive_on_update="false" label="Pending Discovery Approval" sequence="1" value="pending"/>
+                <element inactive_on_update="false" label="Approved" sequence="2" value="approved"/>
+                <element inactive_on_update="false" label="Information Requested" sequence="4" value="info_requested"/>
+            </choice>
+        </element>
+        <element label="Decision Time" max_length="40" name="decision_time" type="glide_date_time"/>
+        <element label="Region" max_length="100" name="region" type="string"/>
+        <element label="Athlete Profile Id" max_length="60" name="athlete_profile" type="string"/>
+    </element>
+</database>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_app_info">
+    <sys_app_info action="INSERT_OR_UPDATE">
+        <properties>{"generated_using_ba":"true"}</properties>
+        <sys_class_name>sys_app_info</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-22 09:53:29</sys_created_on>
+        <sys_id>b34a29a0c3278790240c50c4e4013156</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Champion Intelligence Platform" source="x_snc_champion_i_0">3c166960c3a38790240c50c4e4013191</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Champion Intelligence Platform">3c166960c3a38790240c50c4e4013191</sys_scope>
+        <sys_update_name>sys_app_info_b34a29a0c3278790240c50c4e4013156</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-22 09:53:29</sys_updated_on>
+    </sys_app_info>
+</record_update>

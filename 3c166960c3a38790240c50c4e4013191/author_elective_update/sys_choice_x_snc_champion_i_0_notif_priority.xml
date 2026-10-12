@@ -1,100 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_choice action="INSERT_OR_UPDATE" field="status" table="x_snc_champion_i_0_nomination" version="3">
+    <sys_choice action="INSERT_OR_UPDATE" field="priority" table="x_snc_champion_i_0_notif" version="3">
         <sys_choice_set action="INSERT_OR_UPDATE">
-            <element>status</element>
-            <name>x_snc_champion_i_0_nomination</name>
+            <element>priority</element>
+            <name>x_snc_champion_i_0_notif</name>
             <sys_class_name>sys_choice_set</sys_class_name>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2026-10-11 07:40:33</sys_created_on>
-            <sys_id>1a68921bd9e543cfbc8751c5703e3830</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_name>status</sys_name>
+            <sys_name>priority</sys_name>
             <sys_package display_value="Champion Intelligence Platform" source="x_snc_champion_i_0">3c166960c3a38790240c50c4e4013191</sys_package>
             <sys_policy/>
             <sys_scope display_value="Champion Intelligence Platform">3c166960c3a38790240c50c4e4013191</sys_scope>
-            <sys_update_name>sys_choice_x_snc_champion_i_0_nomination_status</sys_update_name>
+            <sys_update_name>sys_choice_x_snc_champion_i_0_notif_priority</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2026-10-11 07:40:33</sys_updated_on>
         </sys_choice_set>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
-            <element>status</element>
+            <element>priority</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Pending Discovery Approval</label>
+            <label>Critical</label>
             <language>en</language>
-            <name>x_snc_champion_i_0_nomination</name>
+            <name>x_snc_champion_i_0_notif</name>
             <sequence>1</sequence>
             <synonyms/>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-10-11 07:40:33</sys_created_on>
+            <sys_created_on>2026-10-12 12:10:03</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>7aad66d93dab4d639a556bd3d13551ef</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-10-11 07:40:33</sys_updated_on>
-            <value>pending</value>
+            <sys_updated_on>2026-10-12 12:10:03</sys_updated_on>
+            <value>critical</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
-            <element>status</element>
+            <element>priority</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Approved</label>
+            <label>Attention</label>
             <language>en</language>
-            <name>x_snc_champion_i_0_nomination</name>
+            <name>x_snc_champion_i_0_notif</name>
             <sequence>2</sequence>
             <synonyms/>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-10-11 07:40:33</sys_created_on>
+            <sys_created_on>2026-10-12 12:10:03</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>a8b7958865b74be5805b49bb808b0107</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-10-11 07:40:33</sys_updated_on>
-            <value>approved</value>
+            <sys_updated_on>2026-10-12 12:10:03</sys_updated_on>
+            <value>attention</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
-            <element>status</element>
+            <element>priority</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Rejected</label>
+            <label>Opportunity</label>
             <language>en</language>
-            <name>x_snc_champion_i_0_nomination</name>
+            <name>x_snc_champion_i_0_notif</name>
             <sequence>3</sequence>
             <synonyms/>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-10-11 07:40:33</sys_created_on>
+            <sys_created_on>2026-10-12 12:10:03</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>2780c7a94a284a458369c3d3f7112fc8</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-10-11 07:40:33</sys_updated_on>
-            <value>rejected</value>
+            <sys_updated_on>2026-10-12 12:10:03</sys_updated_on>
+            <value>opportunity</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
-            <element>status</element>
+            <element>priority</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Information Requested</label>
+            <label>Informational</label>
             <language>en</language>
-            <name>x_snc_champion_i_0_nomination</name>
+            <name>x_snc_champion_i_0_notif</name>
             <sequence>4</sequence>
             <synonyms/>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-10-11 07:40:33</sys_created_on>
+            <sys_created_on>2026-10-12 12:10:03</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>d7f5742e022d4ce3a71f5fdd9811826e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-10-11 07:40:33</sys_updated_on>
-            <value>info_requested</value>
+            <sys_updated_on>2026-10-12 12:10:03</sys_updated_on>
+            <value>informational</value>
         </sys_choice>
     </sys_choice>
 </record_update>

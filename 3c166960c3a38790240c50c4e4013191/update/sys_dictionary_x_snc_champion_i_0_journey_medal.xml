@@ -29,7 +29,7 @@
         <function_field>false</function_field>
         <internal_type display_value="Choice">choice</internal_type>
         <mandatory>false</mandatory>
-        <max_length/>
+        <max_length>40</max_length>
         <name>x_snc_champion_i_0_journey</name>
         <next_element/>
         <primary>false</primary>
@@ -48,7 +48,6 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-10-11 10:43:38</sys_created_on>
-        <sys_id>d6dbfde63f8d447aa494755c474fbd7f</sys_id>
         <sys_name>Medal</sys_name>
         <sys_package display_value="Champion Intelligence Platform" source="x_snc_champion_i_0">3c166960c3a38790240c50c4e4013191</sys_package>
         <sys_policy/>

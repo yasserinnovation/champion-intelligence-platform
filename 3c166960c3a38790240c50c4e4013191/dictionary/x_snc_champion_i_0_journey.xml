@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="466f00782d21449ea4cc15013e339a0d" label="Champion Journey" name="x_snc_champion_i_0_journey" type="collection">
+        <element label="Started On" max_length="40" name="started_on" type="glide_date_time"/>
+        <element default="discovered" label="Current Stage" max_length="40" name="current_stage" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="International Competition" sequence="7" value="international_competition"/>
+                <element inactive_on_update="false" label="Development" sequence="4" value="development"/>
+                <element inactive_on_update="false" label="Discovered" sequence="1" value="discovered"/>
+                <element inactive_on_update="false" label="International Medal" sequence="8" value="international_medal"/>
+                <element inactive_on_update="false" label="Elite Pathway" sequence="6" value="elite_pathway"/>
+                <element inactive_on_update="false" label="Digitally Assessed" sequence="2" value="digitally_assessed"/>
+                <element inactive_on_update="false" label="Validated" sequence="3" value="validated"/>
+                <element inactive_on_update="false" label="High Potential" sequence="5" value="high_potential"/>
+            </choice>
+        </element>
+        <element label="History" max_length="8000" name="history" type="multi_two_lines"/>
+        <element label="Nomination Id" max_length="32" name="nomination" type="string"/>
+        <element default="none" label="Medal" max_length="40" name="medal" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="None" sequence="1" value="none"/>
+                <element inactive_on_update="false" label="Gold" sequence="2" value="gold"/>
+                <element inactive_on_update="false" label="Silver" sequence="3" value="silver"/>
+                <element inactive_on_update="false" label="Bronze" sequence="4" value="bronze"/>
+            </choice>
+        </element>
+        <element label="Stage Data" max_length="4000" name="stage_data" type="json"/>
+        <element label="Athlete Profile Id" mandatory="true" max_length="60" name="athlete_profile" type="string"/>
+        <element display="true" label="Athlete Name" max_length="150" name="athlete_name" type="string"/>
+        <index name="index" unique="true">
+            <element name="athlete_profile"/>
+        </index>
+    </element>
+</database>

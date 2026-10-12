@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="aaeef78041a545e58e5388fd465cc916" label="Notification" name="x_snc_champion_i_0_notif" type="collection">
+        <element default="unread" label="State" max_length="40" name="state" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Read" sequence="2" value="read"/>
+                <element inactive_on_update="false" label="Unread" sequence="1" value="unread"/>
+            </choice>
+        </element>
+        <element default="none" label="Action Type" max_length="40" name="action_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Open Record" sequence="2" value="open_record"/>
+                <element inactive_on_update="false" label="Nomination Approval" sequence="1" value="nomination_approval"/>
+                <element inactive_on_update="false" label="None" sequence="3" value="none"/>
+            </choice>
+        </element>
+        <element label="Nomination" max_length="32" name="nomination" reference="x_snc_champion_i_0_nomination" type="reference"/>
+        <element default="informational" label="Priority" max_length="40" name="priority" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Attention" sequence="2" value="attention"/>
+                <element inactive_on_update="false" label="Informational" sequence="4" value="informational"/>
+                <element inactive_on_update="false" label="Opportunity" sequence="3" value="opportunity"/>
+                <element inactive_on_update="false" label="Critical" sequence="1" value="critical"/>
+            </choice>
+        </element>
+        <element display="true" label="Title" mandatory="true" max_length="200" name="title" type="string"/>
+        <element label="Target View" max_length="40" name="target_view" type="string"/>
+        <element label="Actionable" max_length="0" name="actionable" type="boolean"/>
+        <element default="open" label="Work State" max_length="40" name="work_state" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Open" sequence="1" value="open"/>
+                <element inactive_on_update="false" label="Resolved" sequence="4" value="resolved"/>
+                <element inactive_on_update="false" label="Acknowledged" sequence="2" value="acknowledged"/>
+                <element inactive_on_update="false" label="In Progress" sequence="3" value="in_progress"/>
+            </choice>
+        </element>
+        <element label="Work Notes" max_length="4000" name="work_notes" type="multi_two_lines"/>
+        <element default="system" label="Category" max_length="40" name="category" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Scouting" sequence="6" value="scouting"/>
+                <element inactive_on_update="false" label="Approval" sequence="7" value="approval"/>
+                <element inactive_on_update="false" label="Talent" sequence="1" value="talent"/>
+                <element inactive_on_update="false" label="Nutrition" sequence="4" value="nutrition"/>
+                <element inactive_on_update="false" label="Rehabilitation" sequence="3" value="rehabilitation"/>
+                <element inactive_on_update="false" label="System" sequence="8" value="system"/>
+                <element inactive_on_update="false" label="Medical" sequence="2" value="medical"/>
+                <element inactive_on_update="false" label="Training" sequence="5" value="training"/>
+            </choice>
+        </element>
+        <element label="Resolved On" max_length="40" name="resolved_on" type="glide_date_time"/>
+        <element label="Related Record" max_length="32" name="related_id" type="string"/>
+        <element label="Assigned To" max_length="150" name="assigned_to" type="string"/>
+        <element label="Related Table" max_length="100" name="related_table" type="string"/>
+        <element label="Message" max_length="2000" name="message" type="multi_two_lines"/>
+        <element label="Read On" max_length="40" name="read_on" type="glide_date_time"/>
+        <index name="index">
+            <element name="nomination"/>
+        </index>
+    </element>
+</database>

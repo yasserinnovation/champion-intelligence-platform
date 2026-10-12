@@ -6,7 +6,6 @@
             <sys_class_name>sys_choice_set</sys_class_name>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2026-10-11 07:40:33</sys_created_on>
-            <sys_id>2eb6297e19ab49cd9ea42bf3fde9fee6</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>category</sys_name>
             <sys_package display_value="Champion Intelligence Platform" source="x_snc_champion_i_0">3c166960c3a38790240c50c4e4013191</sys_package>
@@ -27,13 +26,12 @@
             <sequence>1</sequence>
             <synonyms/>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-10-11 07:40:33</sys_created_on>
+            <sys_created_on>2026-10-12 12:10:03</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>4d42a81f5bd1405d8cadce68f13471da</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-10-11 07:40:33</sys_updated_on>
+            <sys_updated_on>2026-10-12 12:10:03</sys_updated_on>
             <value>talent</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -47,13 +45,12 @@
             <sequence>2</sequence>
             <synonyms/>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-10-11 07:40:33</sys_created_on>
+            <sys_created_on>2026-10-12 12:10:03</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>d5f6fcc909194b86b01a8c9221202576</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-10-11 07:40:33</sys_updated_on>
+            <sys_updated_on>2026-10-12 12:10:03</sys_updated_on>
             <value>medical</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -67,13 +64,12 @@
             <sequence>3</sequence>
             <synonyms/>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-10-11 07:40:33</sys_created_on>
+            <sys_created_on>2026-10-12 12:10:03</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>c33142e353514d6885d4b9bc91c3d859</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-10-11 07:40:33</sys_updated_on>
+            <sys_updated_on>2026-10-12 12:10:03</sys_updated_on>
             <value>rehabilitation</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -87,13 +83,12 @@
             <sequence>4</sequence>
             <synonyms/>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-10-11 07:40:33</sys_created_on>
+            <sys_created_on>2026-10-12 12:10:03</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>79d4bd8c734249c4becd47e53e132717</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-10-11 07:40:33</sys_updated_on>
+            <sys_updated_on>2026-10-12 12:10:03</sys_updated_on>
             <value>nutrition</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -107,13 +102,12 @@
             <sequence>5</sequence>
             <synonyms/>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-10-11 07:40:33</sys_created_on>
+            <sys_created_on>2026-10-12 12:10:03</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>fd2e975e5a7f487a877f47b886c57a79</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-10-11 07:40:33</sys_updated_on>
+            <sys_updated_on>2026-10-12 12:10:03</sys_updated_on>
             <value>training</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -127,13 +121,12 @@
             <sequence>6</sequence>
             <synonyms/>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-10-11 07:40:33</sys_created_on>
+            <sys_created_on>2026-10-12 12:10:03</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>0e6d2bb7c8d24789b74379098ff124b4</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-10-11 07:40:33</sys_updated_on>
+            <sys_updated_on>2026-10-12 12:10:03</sys_updated_on>
             <value>scouting</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -147,13 +140,12 @@
             <sequence>7</sequence>
             <synonyms/>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-10-11 07:40:33</sys_created_on>
+            <sys_created_on>2026-10-12 12:10:03</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>27ff2e87f45b4776b778b3f781982f2d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-10-11 07:40:33</sys_updated_on>
+            <sys_updated_on>2026-10-12 12:10:03</sys_updated_on>
             <value>approval</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -167,13 +159,12 @@
             <sequence>8</sequence>
             <synonyms/>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-10-11 07:40:33</sys_created_on>
+            <sys_created_on>2026-10-12 12:10:03</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>caaa431f34c64e62a41bb7bc314d2bb2</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-10-11 07:40:33</sys_updated_on>
+            <sys_updated_on>2026-10-12 12:10:03</sys_updated_on>
             <value>system</value>
         </sys_choice>
     </sys_choice>

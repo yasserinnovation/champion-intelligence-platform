@@ -29,7 +29,7 @@
         <function_field>false</function_field>
         <internal_type display_value="">boolean</internal_type>
         <mandatory>false</mandatory>
-        <max_length/>
+        <max_length>0</max_length>
         <name>x_snc_champion_i_0_nomination</name>
         <next_element/>
         <primary>false</primary>
@@ -48,7 +48,6 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-10-11 07:40:23</sys_created_on>
-        <sys_id>600bc54654774d0d82db5a8a688cb591</sys_id>
         <sys_name>Coach Notified</sys_name>
         <sys_package display_value="Champion Intelligence Platform" source="x_snc_champion_i_0">3c166960c3a38790240c50c4e4013191</sys_package>
         <sys_policy/>

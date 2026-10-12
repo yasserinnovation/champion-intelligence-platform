@@ -6,7 +6,6 @@
             <sys_class_name>sys_choice_set</sys_class_name>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2026-10-12 12:06:54</sys_created_on>
-            <sys_id>996d67d98fe14119ac507589273343d9</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>work_state</sys_name>
             <sys_package display_value="Champion Intelligence Platform" source="x_snc_champion_i_0">3c166960c3a38790240c50c4e4013191</sys_package>
@@ -30,7 +29,6 @@
             <sys_created_on>2026-10-12 12:10:04</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>274dfff0610c4277bf6ca9986d0e6e21</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2026-10-12 12:10:04</sys_updated_on>
@@ -50,7 +48,6 @@
             <sys_created_on>2026-10-12 12:10:04</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>52039bb9a0a84242be80a31bb4587279</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2026-10-12 12:10:04</sys_updated_on>
@@ -70,7 +67,6 @@
             <sys_created_on>2026-10-12 12:10:04</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>8364f65232b041b495603afc844828a4</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2026-10-12 12:10:04</sys_updated_on>
@@ -90,7 +86,6 @@
             <sys_created_on>2026-10-12 12:10:04</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>4740ad38d5c845a7a0598ee55fb35a13</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2026-10-12 12:10:04</sys_updated_on>
